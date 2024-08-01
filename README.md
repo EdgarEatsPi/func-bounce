@@ -1,9 +1,15 @@
 # Dependencies
-All you need is a decent C compiler (gcc, etc.) and the Raylib library.
+All you need is a decent C compiler (gcc, etc.) and the Raylib or SDL library.
 # Building and running
-You need to compile with -lraylib and -lm.
+For both versions, you need to compile with -lm.
+
+For the Raylib version, you need to compile with -lraylib.
 
 `$ gcc -o func-bounce func-bounce.c -lraylib -lm`
+
+For the SDL version, you need to compile with -SDL2.
+
+`$ gcc -o func-bounce func-bounce.c -lSDL2 -lm`
 
 From there, you can run it from the terminal with `./func-bounce` or just clicking on the program in your file manager.
 # Changing the graph
